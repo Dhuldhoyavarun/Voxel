@@ -1,0 +1,9 @@
+#version 400 core
+in vec2 pass_tc;
+uniform sampler2D ts;
+out vec4 outc;
+
+void main(void){
+
+outc=texture(ts,pass_tc);
+}
